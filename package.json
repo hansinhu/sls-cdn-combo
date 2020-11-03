@@ -1,0 +1,17 @@
+{
+  "name": "cdn-combo",
+  "version": "1.0.0",
+  "description": "",
+  "main": "index.js",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "keywords": [],
+  "author": "galenye",
+  "license": "ISC",
+  "dependencies": {
+    "async": "^3.2.0",
+    "koa": "^2.13.0",
+    "moment": "^2.27.0"
+  }
+}

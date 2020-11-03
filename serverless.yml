@@ -1,0 +1,21 @@
+# serverless.yml
+
+org: orgDemo # (optional) serverless dashboard org. default is the first org you created during signup.
+app: appDemo # (optional) serverless dashboard app. default is the same as the name property.
+stage: dev # (optional) serverless dashboard stage. default is dev.
+component: koa # (required) name of the component. In that case, it's koa.
+name: cdn-combo # (required) name of your koa component instance.
+
+inputs:
+  src:
+    src: ./ # (optional) path to the source folder. default is a hello world app.
+    exclude:
+      - .env
+  region: ap-guangzhou
+  functionName: cdn-combo
+  runtime: Nodejs10.15
+  apigatewayConf:
+    protocols:
+      - http
+      - https
+    environment: release
